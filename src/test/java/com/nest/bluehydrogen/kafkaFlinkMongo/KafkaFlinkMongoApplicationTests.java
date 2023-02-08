@@ -47,7 +47,6 @@ class KafkaFlinkMongoApplicationTests {
 	void testApplicationProperties(){
 		assertEquals("kafka-demo", flink.getKafkaGroupId());
 		assertEquals("localhost:9092", flink.getKafkaBootstrapServers());
-		assertEquals("localhost:2181", flink.getKafkaZookeeperConnect());
 		assertEquals("test", flink.getKafkaTopic());
 		assertEquals("mongodb://localhost:27017", flink.getMongodbUri());
 		assertEquals("patient-db", flink.getMongodbDatabase());

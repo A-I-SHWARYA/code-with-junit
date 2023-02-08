@@ -17,7 +17,7 @@ public class ClearTopicMsg {
     private String kafkaGroupId;
     @Value("${kafka.topic}")
     private String kafkaTopic;
-    public ClearTopicMsg(){
+    public void TopicMsg(){
         Properties properties = new Properties();
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaBootstrapServers);
         properties.put(ConsumerConfig.GROUP_ID_CONFIG, kafkaGroupId);
